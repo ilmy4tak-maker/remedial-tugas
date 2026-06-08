@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 - Remedial IPA: Perubahan Energi</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 750px; background: white; margin: 0 auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .header { text-align: center; margin-bottom: 25px; border-bottom: 3px solid #E91E63; padding-bottom: 15px; }
+        .header h1 { margin: 0; color: #880E4F; font-size: 24px; }
+        .header p { margin: 5px 0 0 0; color: #666; font-weight: 500; }
+        .meta-table { width: 100%; margin-bottom: 25px; border-collapse: collapse; background: #fce4ec; border-radius: 6px; overflow: hidden; }
+        .meta-table td { padding: 10px 15px; border: 1px solid #f8bbd0; font-size: 14px; }
+        .section-title { background: #e2e8f0; padding: 8px 12px; font-weight: bold; border-radius: 4px; margin-top: 20px; }
+        .petunjuk ol { margin: 5px 0; padding-left: 20px; font-size: 14px; color: #555; line-height: 1.5; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; color: #444; font-size: 14px; }
+        input[type="text"], select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 15px; }
+        .soal-card { background: #fafafa; border-left: 5px solid #E91E63; padding: 15px 20px; margin-bottom: 25px; border-radius: 0 8px 8px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+        .soal-header { display: flex; justify-content: space-between; font-weight: bold; color: #880E4F; margin-bottom: 10px; border-bottom: 1px dashed #ddd; padding-bottom: 5px; }
+        .soal-teks { font-weight: 600; margin-bottom: 15px; line-height: 1.5; }
+        .anak-soal { margin-bottom: 15px; }
+        .anak-soal label { font-weight: 500; color: #333; margin-bottom: 6px; }
+        textarea { width: 100%; height: 80px; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; resize: vertical; font-family: inherit; font-size: 14px; }
+        textarea:focus, input:focus, select:focus { border-color: #E91E63; outline: none; box-shadow: 0 0 5px rgba(233,30,99,0.3); }
+        button { width: 100%; background-color: #E91E63; color: white; padding: 14px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; font-weight: bold; transition: background 0.2s; margin-top: 10px; }
+        button:hover { background-color: #880E4F; }
+        #status { margin-top: 20px; text-align: center; font-weight: bold; font-size: 16px; padding: 10px; border-radius: 6px; }
+        .footer-note { text-align: center; margin-top: 30px; font-style: italic; color: #FF9800; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>TUGAS 2 — REMEDIAL IPA</h1>
+        <p>Perubahan Energi</p>
+    </div>
+
+    <table class="meta-table">
+        <tr>
+            <td><strong>Mata Pelajaran:</strong> IPA</td>
+            <td><strong>Jenis Penilaian:</strong> Remedial</td>
+        </tr>
+        <tr>
+            <td><strong>Waktu:</strong> 60 Menit</td>
+            <td><strong>Total Poin:</strong> 100 Poin</td>
+        </tr>
+    </table>
+
+    <div class="section-title">PETUNJUK PENGERJAAN</div>
+    <div class="petunjuk">
+        <ol>
+            <li>Berdoalah sebelum mengerjakan soal.</li>
+            <li>Tuliskan identitas diri dengan lengkap dan benar.</li>
+            <li>Jawab setiap soal secara lengkap, runtut, dan sistematis.</li>
+            <li>Untuk soal hitungan: tuliskan Diketahui, Ditanya, Rumus, dan Penyelesaian.</li>
+            <li>Boleh menggunakan referensi buku/internet, TIDAK boleh meniru jawaban teman.</li>
+            <li>Kumpulkan sesuai waktu yang ditentukan guru.</li>
+        </ol>
+    </div>
+    <br>
+
+    <div class="section-title">IDENTITAS SISWA</div>
+    <br>
+    <div class="form-group">
+        <label for="namaSiswa">Nama Siswa:</label>
+        <input type="text" id="namaSiswa" placeholder="Ketik nama lengkap Anda...">
+    </div>
+
+    <div class="form-group">
+        <label for="kelasSiswa">Kelas / No. Absen:</label>
+        <input type="text" id="kelasSiswa" placeholder="Contoh: X TSM 2 / 07">
+    </div>
+    <br>
+
+    <div class="section-title">SOAL REMEDIAL</div>
+    <br>
+
+    <div class="soal-card">
+        <div class="soal-header">
+            <span>Soal 1: Perubahan Energi Kimia menjadi Energi Listrik</span>
+            <span>20 Poin</span>
+        </div>
+        <div class="soal-teks">
+            Sebuah baterai alkaline 1,5 V menghasilkan arus 0,5 A selama 2 jam untuk menyalakan senter. Setelah digunakan, baterai terasa hangat dan kapasitasnya berkurang.
+        </div>
+        <div class="anak-soal">
+            <label>(a) Jelaskan proses perubahan energi yang terjadi di dalam baterai saat menyalakan senter!</label>
+            <textarea id="s1_a" placeholder="Tulis penjelasan proses perubahan energinya..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(b) Hitung energi listrik yang dihasilkan baterai selama 2 jam tersebut.</label>
+            <textarea id="s1_b" placeholder="Tulis rumus dan langkah perhitungan energinya..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(c) Mengapa baterai terasa hangat saat digunakan? Ke bentuk energi apa saja energi kimia baterai berubah? Sebutkan dan jelaskan!</label>
+            <textarea id="s1_c" placeholder="Tulis alasan dan analisis perubahan energinya..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(d) Jika efisiensi baterai hanya 80%, berapa energi kimia yang awalnya tersimpan?</label>
+            <textarea id="s1_d" placeholder="Tulis perhitungan energi kimia awal..."></textarea>
+        </div>
+    </div>
+
+    <div class="soal-card">
+        <div class="soal-header">
+            <span>Soal 2: Perubahan Energi pada Pembangkit Listrik Tenaga Angin</span>
+            <span>20 Poin</span>
+        </div>
+        <div class="soal-teks">
+            Sebuah turbin angin memiliki baling-baling sepanjang 30 meter dan berputar dengan kecepatan angin 12 m/s. Massa jenis udara = 1,2 kg/m³. Efisiensi turbin 40%. (gunakan π = 3,14)
+        </div>
+        <div class="anak-soal">
+            <label>(a) Jelaskan urutan perubahan energi yang terjadi pada pembangkit listrik tenaga angin, mulai dari angin bertiup hingga lampu menyala!</label>
+            <textarea id="s2_a" placeholder="Tuliskan urutan/rantai perubahan energinya..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(b) Hitung daya angin yang melewati baling-baling. (P = ½ ρ A v³, A = πr²)</label>
+            <textarea id="s2_b" placeholder="Tulis langkah perhitungan luas penampang (A) dan daya angin (P)..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(c) Hitung daya listrik yang dihasilkan turbin dengan efisiensi 40%.</label>
+            <textarea id="s2_c" placeholder="Tulis perhitungan daya listrik aktual..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(d) Energi angin termasuk energi terbarukan. Jelaskan mengapa demikian dan apa keunggulan serta kelemahannya dibandingkan pembangkit listrik tenaga fosil!</label>
+            <textarea id="s2_d" placeholder="Tulis penjelasan, keunggulan, serta kelemahan energi angin..."></textarea>
+        </div>
+    </div>
+
+    <div class="soal-card">
+        <div class="soal-header">
+            <span>Soal 3: Perubahan Energi pada Makhluk Hidup (Metabolisme)</span>
+            <span>20 Poin</span>
+        </div>
+        <div class="soal-teks">
+            Seorang siswa berlari selama 30 menit dengan laju konsumsi energi 600 kkal/jam. Tubuh manusia mengubah energi dari makanan melalui proses metabolisme.
+        </div>
+        <div class="anak-soal">
+            <label>(a) Jelaskan proses perubahan energi kimia makanan menjadi energi gerak dalam tubuh!</label>
+            <textarea id="s3_a" placeholder="Tulis penjelasan mengenai sistem metabolisme dan perubahan energi di otot..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(b) Hitung energi total yang dikeluarkan siswa selama berlari 30 menit (dalam kkal dan joule). (1 kkal = 4.200 J)</label>
+            <textarea id="s3_b" placeholder="Tulis konversi waktu dan langkah hitungan ke kkal dan Joule..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(c) Efisiensi otot manusia sekitar 25%. Berapa energi yang diubah menjadi panas?</label>
+            <textarea id="s3_c" placeholder="Tulis perhitungan sisa energi yang menjadi panas (75%)..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(d) Mengapa setelah berolahraga tubuh kita berkeringat dan terasa panas? Hubungkan jawabanmu dengan konsep perubahan energi dan termoregulasi tubuh!</label>
+            <textarea id="s3_d" placeholder="Tulis analisis hubungan efisiensi otot dengan respon berkeringat..."></textarea>
+        </div>
+    </div>
+
+    <div class="soal-card">
+        <div class="soal-header">
+            <span>Soal 4: Perubahan Energi pada Rangkaian Listrik Seri-Paralel</span>
+            <span>20 Poin</span>
+        </div>
+        <div class="soal-teks">
+            Sebuah rangkaian listrik terdiri dari: sumber tegangan 12 V, resistor R₁ = 4 Ω (seri), dan dua resistor R₂ = 6 Ω dan R₃ = 6 Ω yang tersusun paralel satu sama lain.
+        </div>
+        <div class="anak-soal">
+            <label>(a) Gambarkan skema rangkaian tersebut secara deskriptif dan hitung hambatan total rangkaian!</label>
+            <textarea id="s4_a" placeholder="Tulis penjelasan skema rangkaian dan perhitungan hambatan pengganti total..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(b) Hitung arus yang mengalir dari sumber tegangan.</label>
+            <textarea id="s4_b" placeholder="Tulis langkah perhitungan arus total (Hukum Ohm)..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(c) Hitung daya yang diserap masing-masing resistor (R₁, R₂, dan R₃).</label>
+            <textarea id="s4_c" placeholder="Tulis perhitungan daya listrik pada tiap resistor..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(d) Energi listrik pada resistor berubah menjadi energi panas. Jika rangkaian dinyalakan selama 10 menit, berapa total energi panas yang dihasilkan seluruh resistor?</label>
+            <textarea id="s4_d" placeholder="Tulis konversi waktu ke detik dan rumus W = P x t..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(e) Jelaskan hubungan antara hambatan, arus, dan panas yang dihasilkan berdasarkan Hukum Joule!</label>
+            <textarea id="s4_e" placeholder="Tulis bunyi atau kesimpulan hubungan dari Hukum Joule..."></textarea>
+        </div>
+    </div>
+
+    <div class="soal-card">
+        <div class="soal-header">
+            <span>Soal 5: Analisis Perubahan Energi dalam Kehidupan Sehari-hari</span>
+            <span>20 Poin</span>
+        </div>
+        <div class="soal-teks">
+            Perhatikan skenario berikut: Sebuah PLTS (Pembangkit Listrik Tenaga Surya) memasok listrik ke sebuah rumah. Listrik digunakan untuk: (1) mengisi daya HP menggunakan charger, (2) merebus air menggunakan kettle listrik 800 W selama 5 menit, dan (3) menyalakan speaker bluetooth yang menghasilkan suara musik.
+        </div>
+        <div class="anak-soal">
+            <label>(a) Untuk setiap aktivitas (1), (2), dan (3), tuliskan rantai perubahan energi lengkap mulai dari energi matahari hingga ke bentuk energi akhir yang dimanfaatkan!</label>
+            <textarea id="s5_a" placeholder="Tuliskan rantai perubahan energi untuk aktivitas (1), (2), dan (3)..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(b) Hitung energi yang digunakan kettle listrik untuk merebus air selama 5 menit.</label>
+            <textarea id="s5_b" placeholder="Tulis perhitungan energi listrik dalam Joule..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(c) Pada setiap perubahan energi, selalu ada energi yang 'terbuang'. Jelaskan ke mana energi itu pergi dan apakah hal tersebut melanggar Hukum Kekekalan Energi?</label>
+            <textarea id="s5_c" placeholder="Jelaskan mengenai konsep degradasi energi dan relevansinya dengan hukum fisika..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(d) Berikan satu contoh teknologi modern yang dirancang untuk meminimalkan energi terbuang. Jelaskan cara kerjanya!</label>
+            <textarea id="s5_d" placeholder="Tulis satu contoh teknologi (misal: lampu LED, inverter, dll) beserta cara kerjanya..."></textarea>
+        </div>
+    </div>
+
+    <button onclick="kirimJawaban()">Kirim Jawaban ke Guru</button>
+    
+    <div id="status"></div>
+
+    <div class="footer-note">Tetap semangat dan terus belajar! Kamu pasti bisa! 🌟</div>
+</div>
+
+<script>
+    // URL Google Apps Script yang sudah Anda sediakan sebelumnya
+    const URL_GOOGLE_SCRIPT = "https://script.google.com/macros/s/AKfycbybyqTnU9JfPfEyKoZp0nDFRdPebWc8dOcbM-VQtWc3qO_EkRNzG4VUJJ9GbDE3BT5RwQ/exec";
+
+    function kirimJawaban() {
+        const nama = document.getElementById("namaSiswa").value.trim();
+        const kelas = document.getElementById("kelasSiswa").value.trim();
+        const statusDiv = document.getElementById("status");
+
+        // Validasi identitas wajib diisi
+        if (!nama || !kelas) {
+            statusDiv.innerHTML = "❌ Harap isi Nama dan Kelas terlebih dahulu sebelum mengirim!";
+            statusDiv.style.backgroundColor = "#FFEBEE";
+            statusDiv.style.color = "#C62828";
+            return;
+        }
+
+        statusDiv.innerHTML = "⏳ Sedang mengirim jawaban, mohon tunggu...";
+        statusDiv.style.backgroundColor = "#FFF3E0";
+        statusDiv.style.color = "#EF6C00";
+
+        // Mengumpulkan seluruh jawaban dari form esai
+        const payload = {
+            nama: nama,
+            kelas: kelas,
+            // Menggabungkan sub-soal menjadi satu kesatuan teks per nomor soal
+            jawaban1: `(a) ${document.getElementById("s1_a").value}\n\n(b) ${document.getElementById("s1_b").value}\n\n(c) ${document.getElementById("s1_c").value}\n\n(d) ${document.getElementById("s1_d").value}`,
+            jawaban2: `(a) ${document.getElementById("s2_a").value}\n\n(b) ${document.getElementById("s2_b").value}\n\n(c) ${document.getElementById("s2_c").value}\n\n(d) ${document.getElementById("s2_d").value}`,
+            jawaban3: `(a) ${document.getElementById("s3_a").value}\n\n(b) ${document.getElementById("s3_b").value}\n\n(c) ${document.getElementById("s3_c").value}\n\n(d) ${document.getElementById("s3_d").value}`,
+            jawaban4: `(a) ${document.getElementById("s4_a").value}\n\n(b) ${document.getElementById("s4_b").value}\n\n(c) ${document.getElementById("s4_c").value}\n\n(d) ${document.getElementById("s4_d").value}\n\n(e) ${document.getElementById("s4_e").value}`,
+            jawaban5: `(a) ${document.getElementById("s5_a").value}\n\n(b) ${document.getElementById("s5_b").value}\n\n(c) ${document.getElementById("s5_c").value}\n\n(d) ${document.getElementById("s5_d").value}`
+        };
+
+        // Mengirimkan data via POST Fetch API
+        fetch(URL_GOOGLE_SCRIPT, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(() => {
+            statusDiv.innerHTML = "✅ Jawaban Tugas 2 berhasil terkirim! Terima kasih.";
+            statusDiv.style.backgroundColor = "#E8F5E9";
+            statusDiv.style.color = "#2E7D32";
+            
+            // Mengosongkan form pengerjaan setelah sukses kirim
+            document.querySelectorAll("textarea").forEach(textarea => textarea.value = "");
+            document.getElementById("namaSiswa").value = "";
+            document.getElementById("kelasSiswa").value = "";
+            window.scrollTo({top: 0, behavior: 'smooth'}); // Otomatis kembali ke atas halaman
+        })
+        .catch(error => {
+            statusDiv.innerHTML = "❌ Terjadi kesalahan saat mengirim. Silakan periksa koneksi internet Anda.";
+            statusDiv.style.backgroundColor = "#FFEBEE";
+            statusDiv.style.color = "#C62828";
+            console.error(error);
+        });
+    }
+</script>
+
+</body>
+</html>
