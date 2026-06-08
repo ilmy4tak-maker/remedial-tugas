@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 - Remedial IPA: Energi dan Perubahannya</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 750px; background: white; margin: 0 auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .header { text-align: center; margin-bottom: 25px; border-bottom: 3px solid #2196F3; padding-bottom: 15px; }
+        .header h1 { margin: 0; color: #1565C0; font-size: 24px; }
+        .header p { margin: 5px 0 0 0; color: #666; font-weight: 500; }
+        .meta-table { width: 100%; margin-bottom: 25px; border-collapse: collapse; background: #eef5fc; border-radius: 6px; overflow: hidden; }
+        .meta-table td { padding: 10px 15px; border: 1px solid #d0e1fd; font-size: 14px; }
+        .section-title { background: #e2e8f0; padding: 8px 12px; font-weight: bold; border-radius: 4px; margin-top: 20px; }
+        .petunjuk ol { margin: 5px 0; padding-left: 20px; font-size: 14px; color: #555; line-height: 1.5; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; color: #444; font-size: 14px; }
+        input[type="text"], select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 15px; }
+        .soal-card { background: #fafafa; border-left: 5px solid #2196F3; padding: 15px 20px; margin-bottom: 25px; border-radius: 0 8px 8px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+        .soal-header { display: flex; justify-content: space-between; font-weight: bold; color: #1565C0; margin-bottom: 10px; border-bottom: 1px dashed #ddd; padding-bottom: 5px; }
+        .soal-teks { font-weight: 600; margin-bottom: 15px; line-height: 1.5; }
+        .anak-soal { margin-bottom: 15px; }
+        .anak-soal label { font-weight: 500; color: #333; margin-bottom: 6px; }
+        textarea { width: 100%; height: 80px; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; resize: vertical; font-family: inherit; font-size: 14px; }
+        textarea:focus, input:focus, select:focus { border-color: #2196F3; outline: none; box-shadow: 0 0 5px rgba(33,150,243,0.3); }
+        button { width: 100%; background-color: #2196F3; color: white; padding: 14px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; font-weight: bold; transition: background 0.2s; margin-top: 10px; }
+        button:hover { background-color: #1565C0; }
+        #status { margin-top: 20px; text-align: center; font-weight: bold; font-size: 16px; padding: 10px; border-radius: 6px; }
+        .footer-note { text-align: center; margin-top: 30px; font-style: italic; color: #FF9800; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>TUGAS 1 — REMEDIAL IPA</h1>
+        <p>Energi dan Perubahannya</p>
+    </div>
+
+    <table class="meta-table">
+        <tr>
+            <td><strong>Mata Pelajaran:</strong> IPA</td>
+            <td><strong>Jenis Penilaian:</strong> Remedial</td>
+        </tr>
+        <tr>
+            <td><strong>Waktu:</strong> 60 Menit</td>
+            <td><strong>Total Poin:</strong> 100 Poin</td>
+        </tr>
+    </table>
+
+    <div class="section-title">PETUNJUK PENGERJAAN</div>
+    <div class="petunjuk">
+        <ol>
+            <li>Berdoalah terlebih dahulu sebelum mengerjakan soal.</li>
+            <li>Tuliskan identitas diri dengan lengkap dan benar.</li>
+            <li>Jawablah semua soal secara lengkap, runtut, dan sistematis.</li>
+            <li>Sertakan rumus, diketahui, ditanya, dan penyelesaian untuk soal hitungan.</li>
+            <li>Tugas ini boleh dikerjakan dengan bantuan referensi (buku, internet), BUKAN menyalin jawaban teman.</li>
+            <li>Kumpulkan sesuai batas waktu yang telah ditentukan oleh guru.</li>
+        </ol>
+    </div>
+    <br>
+
+    <div class="section-title">IDENTITAS SISWA</div>
+    <br>
+    <div class="form-group">
+        <label for="namaSiswa">Nama Siswa:</label>
+        <input type="text" id="namaSiswa" placeholder="Ketik nama lengkap Anda...">
+    </div>
+
+    <div class="form-group">
+        <label for="kelasSiswa">Kelas / No. Absen:</label>
+        <input type="text" id="kelasSiswa" placeholder="Contoh: X TSM 1 / 14">
+    </div>
+    <br>
+
+    <div class="section-title">SOAL REMEDIAL</div>
+    <br>
+
+    <div class="soal-card">
+        <div class="soal-header">
+            <span>Soal 1: Konservasi Energi</span>
+            <span>20 Poin</span>
+        </div>
+        <div class="soal-teks">
+            Sebuah mobil bermassa 1.200 kg bergerak dengan kecepatan 72 km/jam di atas jalan datar. Pengemudi menginjak rem dan mobil berhenti setelah menempuh jarak 60 meter. (g = 10 m/s²)
+        </div>
+        <div class="anak-soal">
+            <label>(a) Hitung energi kinetik awal mobil tersebut.</label>
+            <textarea id="s1_a" placeholder="Tulis diketahui, ditanya, rumus, dan penyelesaiannya..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(b) Ke bentuk energi apa energi kinetik tersebut berubah saat pengereman?</label>
+            <textarea id="s1_b" placeholder="Tulis penjelasan Anda..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(c) Jika koefisien gesekan antara ban dan aspal adalah 0,6, verifikasi apakah gaya gesek konsisten dengan hukum kekekalan energi.</label>
+            <textarea id="s1_c" placeholder="Tulis langkah verifikasi dan analisis hitungannya..."></textarea>
+        </div>
+    </div>
+
+    <div class="soal-card">
+        <div class="soal-header">
+            <span>Soal 2: Energi Potensial & Energi Mekanik</span>
+            <span>20 Poin</span>
+        </div>
+        <div class="soal-teks">
+            Sebuah roller coaster memiliki lintasan dengan titik tertinggi A setinggi 45 meter dari tanah dan titik B setinggi 15 meter dari tanah. Massa kereta beserta penumpang adalah 800 kg. Asumsikan tidak ada gesekan.
+        </div>
+        <div class="anak-soal">
+            <label>(a) Berapa kecepatan kereta di titik A jika di titik tersebut kereta baru saja mulai bergerak?</label>
+            <textarea id="s2_a" placeholder="Tulis jawaban beserta alasannya..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(b) Hitung kecepatan kereta di titik B menggunakan prinsip kekekalan energi mekanik.</label>
+            <textarea id="s2_b" placeholder="Tulis langkah perhitungan lengkap..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(c) Jelaskan mengapa pada kenyataannya kecepatan di B lebih rendah dari hasil perhitungan, dan energi yang "hilang" sebenarnya berpindah ke mana?</label>
+            <textarea id="s2_c" placeholder="Tulis analisis fisika Anda..."></textarea>
+        </div>
+    </div>
+
+    <div class="soal-card">
+        <div class="soal-header">
+            <span>Soal 3: Perubahan Energi & Daya Listrik</span>
+            <span>20 Poin</span>
+        </div>
+        <div class="soal-teks">
+            Panel surya rumah tangga menghasilkan daya 2.000 Watt pada intensitas cahaya penuh. Peralatan yang digunakan secara bersamaan: AC (900 W), kulkas (150 W), 10 lampu LED (10 W tiap lampu), dan TV (120 W).
+        </div>
+        <div class="anak-soal">
+            <label>(a) Hitung total daya yang dikonsumsi semua peralatan.</label>
+            <textarea id="s3_a" placeholder="Tulis perhitungan total daya..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(b) Apakah panel surya mampu memenuhi kebutuhan tersebut? Jelaskan!</label>
+            <textarea id="s3_b" placeholder="Tulis kesimpulan dan penjelasan Anda..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(c) Jika digunakan 8 jam/hari, berapa energi (kWh) yang dihasilkan panel surya? Berapa rupiah nilai penghematannya jika tarif listrik Rp1.600/kWh?</label>
+            <textarea id="s3_c" placeholder="Tulis perhitungan kWh dan nilai rupiahnya..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(d) Jelaskan alur perubahan energi dari matahari hingga menjadi cahaya dari lampu LED!</label>
+            <textarea id="s3_d" placeholder="Tulis urutan perubahan energinya..."></textarea>
+        </div>
+    </div>
+
+    <div class="soal-card">
+        <div class="soal-header">
+            <span>Soal 4: Energi Termal & Asas Black</span>
+            <span>20 Poin</span>
+        </div>
+        <div class="soal-teks">
+            Dalam sebuah kalorimeter, 200 gram air bersuhu 25°C dicampur dengan 50 gram logam tembaga bersuhu 180°C. Kalor jenis air = 4.200 J/(kg·°C), kalor jenis tembaga = 390 J/(kg·°C).
+        </div>
+        <div class="anak-soal">
+            <label>(a) Tentukan suhu akhir campuran setelah terjadi keseimbangan termal.</label>
+            <textarea id="s4_a" placeholder="Tulis langkah perhitungan Asas Black (Qlepas = Qterima)..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(b) Berapa kalor yang dilepas tembaga dan berapa kalor yang diserap air?</label>
+            <textarea id="s4_b" placeholder="Tulis hasil hitungan kalornya..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(c) Dalam percobaan nyata, suhu akhir terukur lebih rendah dari hitungan. Jelaskan faktor-faktor penyebabnya menggunakan konsep fisika!</label>
+            <textarea id="s4_c" placeholder="Tulis faktor penyebab kebocoran atau kehilangan kalor..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(d) Apa yang dimaksud dengan Asas Black dan bagaimana prinsipnya terbukti dalam soal ini?</label>
+            <textarea id="s4_d" placeholder="Tulis definisi dan pembuktiannya berdasarkan angka di atas..."></textarea>
+        </div>
+    </div>
+
+    <div class="soal-card">
+        <div class="soal-header">
+            <span>Soal 5: Analisis Sistem Energi Terpadu (PLTA)</span>
+            <span>20 Poin</span>
+        </div>
+        <div class="soal-teks">
+            Sebuah PLTA memanfaatkan air dari waduk yang permukaannya berada 80 meter di atas turbin. Debit air yang mengalir adalah 50 m³/s, massa jenis air 1.000 kg/m³, dan efisiensi sistem 75%.
+        </div>
+        <div class="anak-soal">
+            <label>(a) Hitung daya teoritis maksimum yang tersedia dari aliran air (efisiensi 100%).</label>
+            <textarea id="s5_a" placeholder="Tulis rumus daya air dan hasil hitungannya..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(b) Hitung daya listrik aktual yang dihasilkan dengan efisiensi 75%.</label>
+            <textarea id="s5_b" placeholder="Tulis perhitungan daya aktual..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(c) Ke mana energi yang "hilang" akibat efisiensi sistem yang tidak 100%?</label>
+            <textarea id="s5_c" placeholder="Jelaskan bentuk kerugian energi pada sistem PLTA..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(d) Mengapa energi air disebut energi terbarukan? Jelaskan siklus energinya dari matahari!</label>
+            <textarea id="s5_d" placeholder="Jelaskan hubungan air, siklus hidrologi, dan matahari..."></textarea>
+        </div>
+        <div class="anak-soal">
+            <label>(e) Bandingkan dampak lingkungan PLTA dengan PLTU berbahan batu bara dari sudut pandang energi dan perubahan energi!</label>
+            <textarea id="s5_e" placeholder="Tulis analisis perbandingan dampak lingkungannya..."></textarea>
+        </div>
+    </div>
+
+    <button onclick="kirimJawaban()">Kirim Jawaban ke Guru</button>
+    
+    <div id="status"></div>
+
+    <div class="footer-note">Semangat belajar! Kamu pasti bisa! 🌟</div>
+</div>
+
+<script>
+    // URL Google Apps Script yang sudah Anda sediakan
+    const URL_GOOGLE_SCRIPT = "https://script.google.com/macros/s/AKfycbybyqTnU9JfPfEyKoZp0nDFRdPebWc8dOcbM-VQtWc3qO_EkRNzG4VUJJ9GbDE3BT5RwQ/exec";
+
+    function kirimJawaban() {
+        const nama = document.getElementById("namaSiswa").value.trim();
+        const kelas = document.getElementById("kelasSiswa").value.trim();
+        const statusDiv = document.getElementById("status");
+
+        // Validasi identitas dasar wajib diisi
+        if (!nama || !kelas) {
+            statusDiv.innerHTML = "❌ Harap isi Nama dan Kelas terlebih dahulu sebelum mengirim!";
+            statusDiv.style.backgroundColor = "#FFEBEE";
+            statusDiv.style.color = "#C62828";
+            return;
+        }
+
+        statusDiv.innerHTML = "⏳ Sedang mengirim jawaban, mohon tunggu...";
+        statusDiv.style.backgroundColor = "#FFF3E0";
+        statusDiv.style.color = "#EF6C00";
+
+        // Mengumpulkan seluruh jawaban dari form esai
+        const payload = {
+            nama: nama,
+            kelas: kelas,
+            // Menggabungkan sub-soal menjadi satu kesatuan teks per nomor agar pas dengan struktur Sheets sebelumnya
+            jawaban1: `(a) ${document.getElementById("s1_a").value}\n\n(b) ${document.getElementById("s1_b").value}\n\n(c) ${document.getElementById("s1_c").value}`,
+            jawaban2: `(a) ${document.getElementById("s2_a").value}\n\n(b) ${document.getElementById("s2_b").value}\n\n(c) ${document.getElementById("s2_c").value}`,
+            jawaban3: `(a) ${document.getElementById("s3_a").value}\n\n(b) ${document.getElementById("s3_b").value}\n\n(c) ${document.getElementById("s3_c").value}\n\n(d) ${document.getElementById("s3_d").value}`,
+            jawaban4: `(a) ${document.getElementById("s4_a").value}\n\n(b) ${document.getElementById("s4_b").value}\n\n(c) ${document.getElementById("s4_c").value}\n\n(d) ${document.getElementById("s4_d").value}`,
+            jawaban5: `(a) ${document.getElementById("s5_a").value}\n\n(b) ${document.getElementById("s5_b").value}\n\n(c) ${document.getElementById("s5_c").value}\n\n(d) ${document.getElementById("s5_d").value}\n\n(e) ${document.getElementById("s5_e").value}`
+        };
+
+        // Mengirimkan data via POST Fetch API
+        fetch(URL_GOOGLE_SCRIPT, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(() => {
+            statusDiv.innerHTML = "✅ Jawaban berhasil terkirim! Terima kasih.";
+            statusDiv.style.backgroundColor = "#E8F5E9";
+            statusDiv.style.color = "#2E7D32";
+            
+            // Mengosongkan form pengerjaan setelah sukses kirim
+            document.querySelectorAll("textarea").forEach(textarea => textarea.value = "");
+            document.getElementById("namaSiswa").value = "";
+            document.getElementById("kelasSiswa").value = "";
+            window.scrollTo({top: 0, behavior: 'smooth'}); // Otomatis kembali ke atas halaman
+        })
+        .catch(error => {
+            statusDiv.innerHTML = "❌ Terjadi kesalahan saat mengirim. Silakan periksa koneksi internet Anda.";
+            statusDiv.style.backgroundColor = "#FFEBEE";
+            statusDiv.style.color = "#C62828";
+            console.error(error);
+        });
+    }
+</script>
+
+</body>
+</html>
